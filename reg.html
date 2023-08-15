@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="images/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__wrapper">
+                <a class="header__phone" href="tel:+380673838090">
+                    +38 (067) 383-80-90
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="menu__list-item menu__list-item--active">
+                            <a class="menu__list-link" href="#">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Советы
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <a class="header__logo logo" href="#">
+                <img class="logo__img" src="images/logo.svg" alt="logo">
+            </a>
+            <div class="header__wrapper">
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Правила
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Города
+                            </a>
+                        </li>
+                        <li class="menu__list-item">
+                            <a class="menu__list-link" href="#">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__lang lang">
+                    <div class="lang__top">
+                        <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 6.5L0.249999 12.1292L0.249999 0.870834L10 6.5Z" fill="#2C2824" />
+                        </svg>
+                        <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M26.5 13.5C26.5 6.59625 20.9038 1 14 0.999999C7.09625 0.999998 1.5 6.59625 1.5 13.5C1.5 20.4037 7.09625 26 14 26C20.9037 26 26.5 20.4037 26.5 13.5Z"
+                                stroke="#2C2824" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M12.7499 25.9375C12.7499 25.9375 8.9999 21 8.9999 13.5C8.9999 6 12.7499 1.0625 12.7499 1.0625M15.2499 1.0625C15.2499 1.0625 18.9999 6 18.9999 13.5C18.9999 21 15.2499 25.9375 15.2499 25.9375M25.7124 9.125L2.2874 9.125M25.7124 17.875L2.2874 17.875"
+                                stroke="#2C2824" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </div>
+                <button class="header__burger burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="wrapper">
+        <main class="main">
+            <section class="main__heading heading reg-heading">
+                <div class="heading__inner">
+                    <h1 class="heading__title title">
+                        Регистрация
+                    </h1>
+                    <img class="heading__img" src="images/reg-heading-img.jpg" alt="img">
+                </div>
+            </section>
+            <section class="main__reg reg">
+                <h1 class="reg__title">
+                    Ваша анкета
+                </h1>
+                <div class="reg__inner">
+                    <p class="reg__text">
+                        <span>*</span>поля обязательные для заполнения
+                    </p>
+                    <form class="reg__form reg-form" action="#">
+                        <div class="reg-form__wrapper">
+                            <div class="reg-form__box reg-form-box">
+                                <label class="reg-form-box__label" for="">
+                                    Имя<span>*</span>
+                                </label>
+                                <input class="reg-form-box__input" type="text">
+                            </div>
+                            <div class="reg-form__box reg-form-box">
+                                <input class="reg-form-box__input" type="text" placeholder="Фамилия (конфедициально)">
+                            </div>
+                            <div class="reg-form__box reg-form-box">
+                                <label class="reg-form-box__label" for="">
+                                    Телефон<span>*</span>
+                                    (не публикуется)
+                                </label>
+                                <input class="reg-form-box__input" type="text">
+                            </div>
+                            <div class="reg-form__box reg-form-box">
+                                <input class="reg-form-box__input" type="text" placeholder="Viber (не публикуется)">
+                            </div>
+                            <div class="reg-form__box reg-form-box">
+                                <input class="reg-form-box__input" type="text" placeholder="E-mail (не публикуется)">
+                            </div>
+                        </div>
+                        <div class="reg-form__wrapper">
+                            <div class="reg-form__box reg-form-box">
+                                <input class="reg-form-box__input" type="text" placeholder="Дата рождения">
+                            </div>
+                            <div class="reg-form__box reg-form-box">
+                                <input class="reg-form-box__input" type="text" placeholder="Город">
+                            </div>
+                            <div class="reg-form__box reg-form-box">
+                                <div class="reg-form-box__wrapper">
+                                    <input class="reg-form-box__input" type="text" placeholder="Вес">
+                                    <input class="reg-form-box__input" type="text" placeholder="Рост">
+                                </div>
+                            </div>
+                            <div class="reg-form__box reg-form-box">
+                                <div class="reg-form-box__wrapper">
+                                    <input class="reg-form-box__input" type="text" placeholder="Цвет волос">
+                                    <input class="reg-form-box__input" type="text" placeholder="Цвет глаз">
+                                </div>
+                            </div>
+                            <div class="reg-form__box reg-form-box">
+                                <input class="reg-form-box__input" type="text"
+                                    placeholder="Дети (колтчество, пол и возраст)">
+                            </div>
+                            <div class="reg-form__box reg-form-box">
+                                <div class="reg-form-box__wrapper">
+                                    <div class="reg-form-box__select custom-select">
+                                        <select>
+                                            <option value="0">Религия</option>
+                                            <option value="1">Религия2</option>
+                                            <option value="2">Религия3</option>
+                                        </select>
+                                    </div>
+                                    <input class="reg-form-box__input" type="text" placeholder="Религия (другое)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reg-form__wrapper">
+                            <div class="reg-form__box reg-form-box">
+                                <input class="reg-form-box__input" type="text" placeholder="Образование, специальность">
+                            </div>
+                            <div class="reg-form__box reg-form-box">
+                                <input class="reg-form-box__input" type="text"
+                                    placeholder="Работа (должность, сфера деятельности)">
+                            </div>
+                        </div>
+                        <div class="reg-form__wrapper">
+                            <div class="reg-form-box__select custom-select">
+                                <select>
+                                    <option value="0">Семейное положение</option>
+                                    <option value="1">Семейное положение2</option>
+                                    <option value="2">Семейное положение3</option>
+                                </select>
+                            </div>
+                            <div class="reg-form-box__select custom-select">
+                                <select>
+                                    <option value="0">Курите ли вы?</option>
+                                    <option value="1">Да</option>
+                                    <option value="2">Нет</option>
+                                </select>
+                            </div>
+                            <div class="reg-form-box__select custom-select">
+                                <select>
+                                    <option value="0">Владеете языками</option>
+                                    <option value="1">Да</option>
+                                    <option value="2">Нет</option>
+                                </select>
+                            </div>
+                            <div class="reg-form-box__select custom-select">
+                                <select>
+                                    <option value="0">Уровень иност. языка</option>
+                                    <option value="1">Высокий</option>
+                                    <option value="2">Низкий</option>
+                                </select>
+                            </div>
+                            <div class="reg-form-box__select custom-select">
+                                <select>
+                                    <option value="0">У вас есть водительские права</option>
+                                    <option value="1">Да</option>
+                                    <option value="2">Нет</option>
+                                </select>
+                            </div>
+                            <div class="reg-form-box__select custom-select">
+                                <select>
+                                    <option value="0">Рассмотрите ли Вы кандидатуру фермера в качестве жениха?</option>
+                                    <option value="1">Да</option>
+                                    <option value="2">Нет</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="reg-form__wrapper">
+                            <label class="reg-form__checkbox container">
+                                общительная
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                мягкая
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                толерантная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                жизнерадостная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                бережливая
+                                <input type="checkbox" checked="checked">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                самостоятельная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                чувственная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                активная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                застенчивая
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                верная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                целеустремлённая
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                честная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                нежная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                открытая
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                уравновешенная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                вежливая
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                творческая
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                трудолюбивая
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                улыбчивая
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                смелая
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                темпераментная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                надёжная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                заботливая
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                остроумная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                романтичная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="reg-form__checkbox container">
+                                скромная
+                                <input type="checkbox">
+                                <span class="checkmark"></span>
+                            </label>
+                        </div>
+                        <div class="reg-form__wrapper">
+                            <textarea class="reg-form__textarea" cols="30" rows="4"
+                                placeholder="Хобби и увлечения"></textarea>
+                            <textarea class="reg-form__textarea" cols="30" rows="4"
+                                placeholder="Требование к избраннику"></textarea>
+                            <textarea class="reg-form__textarea" cols="30" rows="4"
+                                placeholder="Что Вы еще хотите сообщить о себе?"></textarea>
+                            <textarea class="reg-form__textarea" cols="30" rows="4"
+                                placeholder="Откуда Вы узнали о нас?"></textarea>
+                            <textarea class="reg-form__textarea" cols="30" rows="4"
+                                placeholder="Дополнительная информация"></textarea>
+                        </div>
+                        <div class="reg-form__upload upload">
+                            <p class="upload__text">
+                                Добавьте Ваши фотографии, среди которых должны быть ПОРТРЕТ И ФОТО В ПОЛНЫЙ РОСТ
+                            </p>
+                            <p class="upload__subtext">
+                                Формат jpeg, jpg, png. До 3-х фотографий, объем одной фотографии - не более 5МБ!
+                            </p>
+                            <div class="upload__box upload-box">
+                                <input class="upload-box__input" type="file">
+                                <svg width="109" height="102" viewBox="0 0 109 102" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M52.2805 17.0006C40.2603 17.0006 30.6769 27.1156 31.9837 38.2506C32.1047 39.2816 31.8231 40.3189 31.1908 41.1705C30.5585 42.0221 29.6183 42.6305 28.5442 42.8831C25.3358 43.6531 22.5368 45.4917 20.671 48.0547C18.8051 50.6177 18.0002 53.7297 18.4068 56.8084C18.8133 59.887 20.4035 62.7215 22.8799 64.7815C25.3563 66.8415 28.5491 67.9859 31.8612 68.0006H36.3988C37.6022 68.0006 38.7564 68.4483 39.6074 69.2454C40.4583 70.0424 40.9364 71.1234 40.9364 72.2506C40.9364 73.3777 40.4583 74.4587 39.6074 75.2558C38.7564 76.0528 37.6022 76.5006 36.3988 76.5006H31.8612C26.6461 76.5038 21.5891 74.8242 17.5413 71.7445C13.4935 68.6648 10.702 64.373 9.63667 59.5915C8.57134 54.8101 9.29722 49.8308 11.6921 45.4919C14.0871 41.1529 18.0048 37.7192 22.7859 35.7686C22.8679 29.3253 25.3522 23.1116 29.8088 18.2026C34.2655 13.2936 40.4142 9.99826 47.1909 8.88677C53.9676 7.77529 60.9459 8.9176 66.9184 12.116C72.8909 15.3145 77.4817 20.3678 79.8964 26.4016C86.2459 28.0416 91.7457 31.7813 95.3772 36.928C99.0087 42.0746 100.526 48.2795 99.6476 54.3935C98.7693 60.5074 95.5552 66.1161 90.6005 70.1808C85.6458 74.2454 79.2863 76.4906 72.6998 76.5006C71.4963 76.5006 70.3422 76.0528 69.4912 75.2558C68.6402 74.4587 68.1621 73.3777 68.1621 72.2506C68.1621 71.1234 68.6402 70.0424 69.4912 69.2454C70.3422 68.4483 71.4963 68.0006 72.6998 68.0006C77.2602 68.007 81.6561 66.4053 85.013 63.5141C88.3699 60.6228 90.4417 56.6539 90.8163 52.397C91.1909 48.1401 89.8409 43.907 87.0347 40.54C84.2285 37.173 80.1719 34.9188 75.6719 34.2258C74.8054 34.0916 73.9983 33.7271 73.3467 33.1755C72.6951 32.624 72.2264 31.9087 71.9964 31.1148C70.82 27.0614 68.252 23.4833 64.6888 20.9324C61.1256 18.3816 56.7653 16.9999 52.2805 17.0006ZM59.0869 52.7686L64.954 58.2596C65.3759 58.6542 65.8767 58.9671 66.4277 59.1804C66.9787 59.3937 67.5691 59.5033 68.1654 59.5029C68.7616 59.5025 69.3519 59.3922 69.9025 59.1781C70.4532 58.964 70.9535 58.6505 71.3748 58.2553C71.7961 57.8602 72.1301 57.3912 72.3579 56.8751C72.5857 56.359 72.7027 55.806 72.7023 55.2476C72.7019 54.6891 72.584 54.1363 72.3555 53.6205C72.1269 53.1047 71.7921 52.6362 71.3702 52.2416L58.556 40.2608C57.4926 39.2668 56.0516 38.7086 54.5493 38.7086C53.0469 38.7086 51.6059 39.2668 50.5426 40.2608L37.7283 52.2458C36.8769 53.0427 36.3983 54.1238 36.3979 55.2512C36.3975 56.3786 36.8752 57.46 37.726 58.2574C38.5769 59.0549 39.7311 59.5032 40.9348 59.5036C42.1385 59.504 43.2931 59.0565 44.1445 58.2596L50.0117 52.7686V89.2506C50.0117 90.3777 50.4897 91.4587 51.3407 92.2558C52.1917 93.0528 53.3458 93.5006 54.5493 93.5006C55.7527 93.5006 56.9069 93.0528 57.7579 92.2558C58.6088 91.4587 59.0869 90.3777 59.0869 89.2506V52.7686Z"
+                                        fill="#DC7DA6" />
+                                </svg>
+                                <div class="upload-box__row">
+                                    <p class="upload-box__row-text">
+                                        Перетащите файлы, или нажмите <span>загрузка</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <p class="upload__info">
+                                Отправляя нам анкету, Вы подтверждаете, что ознакомились и согласны с нашими
+                                <a href="#">
+                                    Правилами
+                                </a>
+                                и
+                                <a href="#">
+                                    Политикой конфиденциальности!
+                                </a>
+                            </p>
+                        </div>
+                        <div class="reg-form__bottom reg-form-bottom">
+                            <div class="reg-form-bottom__captcha">
+                                <img class="reg-form-bottom__captcha-img" src="images/captcha-img.png" alt="captcha">
+                            </div>
+                            <button class="reg-form-bottom__button" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__inner">
+                <nav class="footer__menu footer-menu">
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__list-item">
+                            <h3 class="footer-menu__list-title">
+                                Информация
+                            </h3>
+                        </li>
+                        <li class="footer-menu__list-item">
+                            <a class="footer-menu__list-link" href="#">
+                                О нас
+                            </a>
+                        </li>
+                        <li class="footer-menu__list-item">
+                            <a class="footer-menu__list-link" href="#">
+                                Услуги
+                            </a>
+                        </li>
+                        <li class="footer-menu__list-item">
+                            <a class="footer-menu__list-link" href="#">
+                                Отзывы
+                            </a>
+                        </li>
+                        <li class="footer-menu__list-item">
+                            <a class="footer-menu__list-link" href="#">
+                                Советы
+                            </a>
+                        </li>
+                        <li class="footer-menu__list-item">
+                            <a class="footer-menu__list-link" href="#">
+                                Правила
+                            </a>
+                        </li>
+                        <li class="footer-menu__list-item">
+                            <a class="footer-menu__list-link" href="#">
+                                Блог
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="footer-menu__list">
+                        <li class="footer-menu__list-item">
+                            <h3 class="footer-menu__list-title">
+                                Контакты
+                            </h3>
+                        </li>
+                        <li class="footer-menu__list-item">
+                            <a class="footer-menu__list-link" href="#">
+                                Киев, <br>
+                                ул. Бориса Гринченко, 9
+                                +38 093 870 78 78
+                                info@jaroslavna.com.ua
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="footer__wrapper">
+                    <a class="footer__logo logo" href="#">
+                        <img class="logo__img" src="images/footer-logo.svg" alt="logo">
+                    </a>
+                    <div class="footer__socials socials">
+                        <ul class="socials__list">
+                            <li class="socials__list-item">
+                                <a class="socials__list-link" href="#">
+                                    <svg width="30" height="29" viewBox="0 0 30 29" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M22.1162 6.57153C21.2376 6.57153 20.5276 7.28159 20.5276 8.16013C20.5276 9.03867 21.2376 9.74271 22.1162 9.74271C22.9947 9.74271 23.7048 9.03266 23.7048 8.16013C23.7048 7.28761 22.9947 6.57153 22.1162 6.57153Z"
+                                            stroke="#DC7DA6" stroke-width="1.3" stroke-miterlimit="10"
+                                            stroke-linecap="round" />
+                                        <path
+                                            d="M15.0639 8.66553C11.7483 8.66553 9.05249 11.3613 9.05249 14.6769C9.05249 17.9925 11.7483 20.6883 15.0639 20.6883C18.3795 20.6883 21.0753 17.9925 21.0753 14.6769C21.0753 11.3613 18.3795 8.66553 15.0639 8.66553Z"
+                                            stroke="#DC7DA6" stroke-width="1.3" stroke-miterlimit="10"
+                                            stroke-linecap="round" />
+                                        <path
+                                            d="M20.4132 28.2043H9.61195C4.23238 28.2043 1.48242 25.4543 1.48242 20.0747V9.26747C1.48242 3.8879 4.23238 1.13794 9.61195 1.13794H20.4132C25.7928 1.13794 28.5427 3.8879 28.5427 9.26747V20.0747C28.5427 25.4543 25.7928 28.2043 20.4132 28.2043Z"
+                                            stroke="#DC7DA6" stroke-width="1.3" stroke-miterlimit="10"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__list-item">
+                                <a class="socials__list-link" href="#">
+                                    <svg width="31" height="24" viewBox="0 0 31 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M29.6546 8.53913C29.6546 4.2788 27.4884 1.34497 23.2801 1.34497H7.29087C3.08846 1.34497 0.79248 4.2788 0.79248 8.53913V15.9245C0.79248 20.1788 3.08846 22.7243 7.29087 22.7243H23.2801C27.4825 22.7243 29.6546 20.1848 29.6546 15.9245V8.53913ZM19.9099 12.8771L12.9748 16.4921C12.2842 16.8865 11.8769 16.4384 11.8769 16.1097V8.62876C11.8769 8.30012 12.1307 7.83405 12.9807 8.25829L19.8686 12.0944C20.1637 12.2617 20.2109 12.7218 19.9158 12.8831L19.9099 12.8771Z"
+                                            stroke="#DC7DA6" stroke-width="1.3" stroke-miterlimit="10"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__list-item">
+                                <a class="socials__list-link" href="#">
+                                    <svg width="31" height="32" viewBox="0 0 31 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M15.6722 1.06909C7.70383 1.06909 1.24121 7.77924 1.24121 16.0529C1.24121 22.7873 5.52423 28.4815 11.4127 30.3674V19.2711H9.21549C9.04557 19.2711 8.91081 19.1311 8.91081 18.9486V15.189C8.91081 15.0126 9.04557 14.8666 9.21549 14.8666H11.4127V11.2408C11.4127 8.71611 13.3872 6.66595 15.8187 6.66595H19.967C20.1369 6.66595 20.2717 6.81196 20.2717 6.98838V10.748C20.2717 10.9244 20.131 11.0704 19.967 11.0704H17.512C16.9085 11.0704 16.4222 11.5754 16.4222 12.202V14.8666H19.9143C20.0959 14.8666 20.2365 15.0247 20.2248 15.2133L19.9201 18.973C19.9084 19.1372 19.7736 19.265 19.6154 19.265H16.4281V31.0001C24.0449 30.5925 30.1033 24.0527 30.1033 16.0407C30.1033 8.02867 23.6407 1.06909 15.6722 1.06909Z"
+                                            stroke="#DC7DA6" stroke-width="1.3" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__list-item">
+                                <a class="socials__list-link" href="#">
+                                    <svg width="27" height="28" viewBox="0 0 27 28" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M1.54599 14.0435C1.54599 20.6797 6.9023 26.0666 13.5141 26.0666C14.2826 26.0666 15.0277 25.9899 15.7552 25.8544C16.8053 26.4909 18.0432 26.8622 19.3632 26.8622C23.2177 26.8622 26.3446 23.7209 26.3446 19.8428C26.3446 18.4873 25.9574 17.2201 25.2945 16.1416C25.4118 15.4579 25.4764 14.7625 25.4764 14.0435C25.4764 7.40129 20.12 2.02036 13.5082 2.02036C12.7573 2.02036 12.0181 2.09108 11.3024 2.22664C10.2463 1.57833 9.0026 1.20703 7.67672 1.20703C3.81642 1.20703 0.689453 4.34836 0.689453 8.2264C0.689453 9.57605 1.07078 10.8373 1.72786 11.9099C1.60466 12.5995 1.53426 13.3185 1.53426 14.0435H1.54599ZM13.6432 5.50352C17.5035 5.73337 19.7622 7.43665 19.9851 9.02794C20.0907 10.0652 19.4043 10.8786 18.2075 10.8786C16.4651 10.8786 16.2832 8.53876 13.2794 8.53876C11.9242 8.53876 10.7802 9.10456 10.7802 10.3304C10.7802 12.9001 20.4134 11.409 20.4134 17.061C20.4134 20.3202 17.8144 22.4537 13.9424 22.4537C10.5338 22.4537 7.10765 20.9037 7.12525 18.228C7.12525 17.4205 7.72951 16.6838 8.52739 16.6838C10.5338 16.6838 10.5162 19.6778 13.7136 19.6778C15.9547 19.6778 16.7173 18.4519 16.7173 17.5915C16.7173 14.4973 7.03138 16.395 7.03138 10.578C7.03138 7.43075 9.60687 5.26188 13.649 5.49763L13.6432 5.50352Z"
+                                            stroke="#DC7DA6" stroke-width="1.3" stroke-miterlimit="10"
+                                            stroke-linecap="round" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__list-item">
+                                <a class="socials__list-link" href="#">
+                                    <svg width="32" height="33" viewBox="0 0 32 33" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M15.6742 6.55555C17.9886 6.57346 19.9568 7.33746 21.524 8.83563C23.0912 10.3398 23.8931 12.405 23.9113 14.9894M16.4032 8.59091C18.1041 8.71625 19.4526 9.30119 20.4124 10.3278C21.3782 11.3604 21.846 12.6616 21.8156 14.1956M17.0046 10.6979C18.7237 10.7874 19.6773 11.7544 19.7685 13.4913M17.0653 18.7617C17.0653 18.7617 17.6242 18.8095 17.9279 18.4454L18.5171 17.7172C18.8026 17.3531 19.489 17.1263 20.1572 17.4904C21.0441 17.9858 22.1983 18.7617 22.9819 19.4839C23.4132 19.8421 23.5165 20.3733 23.2188 20.9343V20.9463C22.909 21.4715 22.502 21.9669 21.9917 22.4265H21.9796C21.4025 22.91 20.7343 23.1846 20.0236 22.9578L20.0115 22.9399C18.7358 22.5817 15.6682 21.0478 13.7122 19.5197C10.517 17.0427 8.24509 12.9541 7.61334 10.7635L7.59512 10.7516C7.36428 10.0473 7.64371 9.39669 8.1236 8.82966L8.13574 8.81772C8.60348 8.31038 9.10767 7.91047 9.64223 7.61203H9.65437C10.2254 7.31956 10.7599 7.41506 11.1305 7.84481C11.6104 8.33425 12.5216 9.5101 13.1533 10.6203C13.5239 11.2769 13.293 11.9573 12.9286 12.2319L12.1875 12.8108C11.8169 13.1093 11.8655 13.6584 11.8655 13.6584C11.8655 13.6584 12.965 17.7351 17.0653 18.7617ZM27.477 4.02479C26.6934 3.31451 23.5225 1.05831 16.4639 1.0225C16.4639 1.0225 8.14183 0.527087 4.08404 4.18595C1.82431 6.40633 1.02855 9.65335 0.949577 13.6763C0.864534 17.7052 0.75519 25.2498 8.16004 27.2971H8.16612V30.4187C8.16612 30.4187 8.11751 31.6841 8.96795 31.9408C9.99454 32.2512 10.5959 31.2902 11.5739 30.2576C12.1085 29.6905 12.8496 28.8549 13.4084 28.2163C18.4746 28.6341 22.3623 27.6791 22.8057 27.5358C23.8263 27.2075 29.6153 26.4793 30.5568 18.9348C31.5288 11.1575 30.0891 6.23324 27.4831 4.01285L27.477 4.02479Z"
+                                            stroke="#DC7DA6" stroke-width="1.3" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="socials__list-item">
+                                <a class="socials__list-link" href="#">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M21.99 17.7595C21.6493 17.5724 19.9704 16.6731 19.6541 16.5464C19.3378 16.4196 19.1127 16.3532 18.8633 16.6912C18.62 17.0292 17.9204 17.7776 17.7136 18.0009C17.5007 18.2242 17.3 18.2423 16.9533 18.0613C16.6126 17.8742 15.5055 17.4698 14.222 16.2446C13.2244 15.291 12.5674 14.1322 12.3728 13.7821C12.1781 13.4321 12.3728 13.251 12.5553 13.082C12.7195 12.9311 12.9202 12.6897 13.1027 12.4966C13.2852 12.3035 13.3461 12.1586 13.4738 11.9353C13.6015 11.712 13.5468 11.5068 13.4677 11.3318C13.3886 11.1567 12.756 9.43061 12.4884 8.7305C12.2572 8.10885 11.7645 8.07264 11.0649 8.07264C10.8277 8.07264 10.4506 8.13299 10.1221 8.47097C9.78752 8.80292 8.85682 9.60563 8.79599 11.3076C8.72907 13.0096 9.92134 14.6935 10.0856 14.9349C10.2498 15.1703 12.3484 18.8579 15.834 20.3728C20.5118 22.4068 22.0082 20.7832 22.3975 19.8357C22.7199 19.039 22.7442 18.3449 22.6591 18.2001C22.58 18.0492 22.3489 17.9587 22.0082 17.7716L21.99 17.7595ZM15.5907 1.14397C8.05995 1.14397 1.95264 7.20354 1.95264 14.6814C1.95264 17.2404 2.67043 19.6305 3.91136 21.6704L1.44775 28.931L9.00281 26.5289C10.9554 27.6033 13.2061 28.2128 15.5968 28.2128C23.1336 28.2128 29.2409 22.1533 29.2409 14.6754C29.2409 7.1975 23.1336 1.13794 15.5968 1.13794L15.5907 1.14397Z"
+                                            stroke="#DC7DA6" stroke-width="1.3" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p class="footer__copy">
+                © 2004 - 2023 Ярославна
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
